@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_Mi8937.mk
+    $(LOCAL_DIR)/twrp_Mi8937.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_Mi8937-user \
-    omni_Mi8937-userdebug \
-    omni_Mi8937-eng
+    twrp_Mi8937-user \
+    twrp_Mi8937-userdebug \
+    twrp_Mi8937-eng
