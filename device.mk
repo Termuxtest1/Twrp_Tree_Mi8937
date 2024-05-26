@@ -6,3 +6,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/Mi8937
+
+#Enable Dynamic Partition.
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
