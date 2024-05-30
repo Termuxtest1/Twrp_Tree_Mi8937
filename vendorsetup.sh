@@ -25,6 +25,7 @@ export TARGET_DEVICE_ALT="santoni"
 export TARGET_DEVICE_ALT="ugglite"
 export TARGET_DEVICE_ALT="ugg"
 
+export OF_MAINTAINER="Termuxtest1"
 #Lunch Choices.
 COMMON_LUNCH_CHOICES := \
     twrp_Mi8937-user \
