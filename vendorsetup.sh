@@ -17,13 +17,7 @@ export FOX_USE_XZ_UTILS=1
 export FOX_USE_DYNAMIC_PARTITIONS=1
 
 #Fix Mi8937 device's Not Mi8937 device.
-export TARGET_DEVICE_ALT="land"
-export TARGET_DEVICE_ALT="prada"
-export TARGET_DEVICE_ALT="riva"
-export TARGET_DEVICE_ALT="rolex"
-export TARGET_DEVICE_ALT="santoni"
-export TARGET_DEVICE_ALT="ugglite"
-export TARGET_DEVICE_ALT="ugg"
+export TARGET_DEVICE_ALT="Mi8937,mi8937,land,prada,riva,rolex,santoni,ugg,ugglite"
 
 export OF_MAINTAINER="Termuxtest1"
 #Lunch Choices.
