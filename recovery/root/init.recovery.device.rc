@@ -1,0 +1,18 @@
+# Determine device
+on init
+    exec u:r:recovery:s0 -- /system/bin/determine-device.sh
+
+# DT2W
+on init
+    write /proc/sys/dev/xiaomi_msm8937_touchscreen/enable_dt2w 1
+
+# Fstab
+on init
+    exec u:r:recovery:s0 -- /system/bin/merge-fstab.sh
+
+# HVDCP
+service hvdcp_opti /system/bin/hvdcp_opti
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
