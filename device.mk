@@ -31,6 +31,7 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 #Dfe
 TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
+
 # Crypto
 MITHORIUM_INCLUDE_CRYPTO_FBE := true
 ifneq ($(TARGET_KERNEL_VERSION),4.19)
@@ -50,3 +51,10 @@ ifeq ($(TARGET_KERNEL_VERSION),4.19)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 endif
 
+# Inherit from mithorium-common
+$(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
+
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
