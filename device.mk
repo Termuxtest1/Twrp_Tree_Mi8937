@@ -39,9 +39,6 @@ MITHORIUM_INCLUDE_CRYPTO_FDE := true
 endif
 MITHORIUM_LEGACY_CRYPTO := true
 
-# Inherit from mithorium-common
-$(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
-
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
@@ -50,10 +47,6 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 endif
-
-# Inherit from mithorium-common
-$(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
-
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
