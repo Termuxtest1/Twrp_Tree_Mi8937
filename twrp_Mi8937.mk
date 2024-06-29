@@ -21,6 +21,9 @@ $(call inherit-product-if-exists, device/xiaomi/Mi8937/fox_Mi8937.mk)
 # Inherit from Mi8937 device
 $(call inherit-product, device/xiaomi/Mi8937/device.mk)
 
+#Inhert Vendor prop
+TARGET_VENDOR_PROP += device/xiaomi/Mi8937/vendor.prop
+
 PRODUCT_DEVICE := Mi8937
 PRODUCT_NAME := twrp_Mi8937
 PRODUCT_BRAND := Xiaomi
